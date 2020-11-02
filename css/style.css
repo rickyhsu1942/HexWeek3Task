@@ -8,6 +8,10 @@
     --roboto: 'Roboto', sans-serif;
 }
 
+*,*:before,*:after{
+    box-sizing: border-box
+  }
+  
 body {
     font-family: var(--notoSans);
     font-weight: normal;
@@ -253,8 +257,7 @@ img {
     }
     .header__nav li {
         width: 50%;
-        outline: 1px solid var(--secondaryColor);
-        outline-offset: -1px;
+        border: 1px solid var(--secondaryColor);
     }
     .header__nav a {
         display: block;
