@@ -5,6 +5,8 @@
     --secondaryColor: #FFFFFF;
     --notoSans: 'Noto Sans', sans-serif;
     --roboto: 'Roboto', sans-serif;
+    --bannerHeight: 304px;
+    --bannerHeightAtPhone: 143px;
 }
 
 *,*:before,*:after{
@@ -65,6 +67,37 @@ img {
     line-height: 28px;
 }
 
+/* banner */
+.banner {
+    height: var(--bannerHeight);
+    background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/qa.png?raw=true);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bannerInner--fxBottom {
+    height: inherit;
+    display: flex;
+    align-items: flex-end;
+}
+
+.bannerInner--flex {
+    display: flex;
+    align-items: center;
+}
+
+.banner__title {
+    font-size: 80px;
+    font-weight: bold;
+    line-height: 90px;
+    margin-right: 24px;
+}
+
+.banner__fqIcon {
+    height: 80px;
+
+}
 
 /* footer */
 
@@ -192,6 +225,16 @@ img {
     .header__nav a {
         padding: 20px;
     }
+
+    /*banner*/
+    .banner__title {
+        font-size: 48px;
+        line-height: 67px;
+        margin-right: 16px;
+    }
+    .banner__fqIcon{
+        height: 48px;
+    }
     /* footer */
     .footerTop {
         padding-top: 40px;
@@ -236,6 +279,20 @@ img {
     /* content */
     .content {
         max-width: 344.5px;
+    }
+    
+    /*banner*/
+    .banner{
+        height: var(--bannerHeightAtPhone);
+    }
+    
+    .banner__title {
+        font-size: 28px;
+        line-height: 40px;
+        margin-right: 8px;
+    }
+    .banner__fqIcon{
+        height: 24px;
     }
     /* header */
     .header {
